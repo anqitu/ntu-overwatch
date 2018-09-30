@@ -33,7 +33,7 @@ def image(path):
     return send_from_directory(relative_image_dir, path)
 
 def get_images(directory):
-    return glob.glob(directory + '/*.jpg')
+    return glob.glob(directory + '/**/*.jpg', recursive=True)
 
 def set_image_tag(image, count):
     if not os.path.isfile(OUTPUT_FILE):
