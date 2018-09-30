@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NTU Overwatch Image Tagger</title>
+  </head>
+  <body>
+    <h2>NTU Overwatch Image Tagger</h4>
+    <img src="{{image}}">
+    {% if images_left == 0 %}
+      <b>All done! There are no images left to count.</b>
+      <br><br>
+      If you believe this was a mistake, please check if
+      you have correctly placed the images to be tagged
+      inside the 'images' folder. Thank you!
+    {% else %}
+      <br>Untagged Images: {{images_left}}
+      <br>
+      <form method="POST" action="/tag">
+        <input type="hidden" name="image" value="{{image}}">
+        <label for="count">Number of People in Image</label>
+        <input type="number" name="count" required min="0" autofocus>
+        <br>
+        <input type="submit" value="Send">
+      </form>
+    {% endif %}
+  </body>
+</html>
