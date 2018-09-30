@@ -3,3 +3,5 @@ tagging/tagging\.csv
 tagging/images/*.jpg
 
 *.jpg
+
+*.zip

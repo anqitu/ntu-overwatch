@@ -1,8 +1,8 @@
 # NTU Overwatch Tagger
 
 ## Usage
-
-1. Move the images you need to tag inside the `/images` folder
+0. Download the image folder (67.37 MB) with this [link](https://workupload.com/file/bHypwKMs) ( There are 20 images for each of the 5 locations assigned to each person, so in total 100 per person )
+1. Move the the folder named by your name inside the `/images` folder
 2. Install `flask` with `pip install flask`
 3. Run the app with `python app.py`
 4. View the app from your browser by going to `127.0.0.1:5000`
